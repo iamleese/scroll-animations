@@ -1,8 +1,8 @@
 {
 	"name": "scroll-animations",
 	"version": "0.1.0",
-	"description": "Example static block scaffolded with Create Block tool.",
-	"author": "The WordPress Contributors",
+	"description": "Uses Locomotive Scroll attributes to blocks to create smooth scrolling and parallax effects.",
+	"author": "Melissa Hiatt",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
 	"scripts": {
@@ -16,5 +16,9 @@
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^25.4.0"
+	},
+	"dependencies": {
+		"locomotive-scroll": "^4.1.4",
+		"react-test-renderer": "^18.2.0"
 	}
 }
