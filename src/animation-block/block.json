@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "scroll-animations/animation-block",
+	"version": "0.1.0",
+	"title": "Animated Block",
+	"category": "design",
+	"description": "Creates an scroll-based animated block",
+	"supports": {
+		"html": true
+	},
+	"attributes": {
+		"sticky" : {
+			"type" : "boolean",
+			"default" : false
+		},
+		"scroll_target":{
+			"type": "string"
+		},
+		"offset_bottom" : {
+			"type" : "string",
+			"default": "50px"
+		},
+		"offset_top" : {
+			"type" : "string",
+			"default": ""
+		},
+		"position": {
+			"type": "string"
+		},
+		"speed":{
+			"type": "number",
+			"default": "0"
+		},
+		"delay":{
+			"type": "number",
+			"default": 0
+		},
+		"direction":{
+			"type": "string",
+			"default": "vertical"
+		},
+		"scroll_id":{
+			"type": "string"
+		},
+		"scroll_call":{
+			"type": "string"
+		}
+	},
+	"textdomain": "scroll-animations",
+	"editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
