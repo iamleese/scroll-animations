@@ -3,9 +3,11 @@
  */
 
 .wp-block-scroll-animations-animation-block  {
+  padding: .5em;
+  border: 1px dotted #9c00cc;
 }
 
-  .components-panel__row{
-    display: flex;
-    flex-flow: column;
-  }
+
+.components-base-control.components-range-control{
+  min-width: 200px;
+}

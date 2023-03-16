@@ -14,12 +14,12 @@
 			"type" : "boolean",
 			"default" : false
 		},
-		"scroll_target":{
+		"target":{
 			"type": "string"
 		},
 		"offset_bottom" : {
 			"type" : "string",
-			"default": "50px"
+			"default": "0"
 		},
 		"offset_top" : {
 			"type" : "string",
@@ -40,11 +40,14 @@
 			"type": "string",
 			"default": "vertical"
 		},
-		"scroll_id":{
+		"id":{
 			"type": "string"
 		},
-		"scroll_call":{
+		"call":{
 			"type": "string"
+		},
+		"class":{
+			"type" : "string"
 		}
 	},
 	"textdomain": "scroll-animations",
