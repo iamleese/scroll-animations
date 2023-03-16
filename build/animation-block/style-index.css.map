@@ -1,0 +1,1 @@
+{"version":3,"file":"animation-block/style-index.css","mappings":";;;AACA;;CAAA,C","sources":["webpack://scroll-animations/./src/animation-block/style.scss"],"sourcesContent":["\n/**\n* Front and Back End Styles\n*/\n\n.wp-block-scroll-animations-animation-block  {\n}\n"],"names":[],"sourceRoot":""}

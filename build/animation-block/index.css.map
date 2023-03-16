@@ -1,0 +1,1 @@
+{"version":3,"file":"animation-block/index.css","mappings":";;;AAAA;;EAAA;AAOE;EACE;EACA;AAHJ,C","sources":["webpack://scroll-animations/./src/animation-block/editor.scss"],"sourcesContent":["/**\n * Editor Styles\n */\n\n.wp-block-scroll-animations-animation-block  {\n}\n\n  .components-panel__row{\n    display: flex;\n    flex-flow: column;\n  }\n"],"names":[],"sourceRoot":""}
