@@ -18,9 +18,9 @@ This plugin uses Locomotive scroll to create beautiful scroll-based animations. 
 1. Activate the plugin through the 'Plugins' screen in WordPress
 
 
-== Usage ==
+## Usage
 
-
+coming soon!!
 
 ## Changelog
 
