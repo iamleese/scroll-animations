@@ -15,19 +15,7 @@
 
 
 
-//REGISTER META
-function post_animations_meta(){
-	$args = ['type' => 'boolean',
-			'single' => 'true',
-			'show_in_rest' => 'true'
-			];
-
-	register_post_meta('', 'smooth_scroll', $args );
-}
-
-add_action('init', 'post_animations_meta');
-
-//ENQUEUE SCRIPTS
+//Enqueue block scripts
 function dcs_scroll_animations() {
 	wp_enqueue_script('smooth-scrolling', plugin_dir_url(__FILE__).'build/index.js', [ 'wp-edit-post' ], DCS_SCROLL_ANIMATIONS_VERSION, false);
 }
@@ -40,10 +28,19 @@ function locomotive_styles(){
 
 add_action('init', 'locomotive_styles');
 
-//REGISTER BLOCK
+//Register block
 function dcs_scroll_animations_block_init() {
 	//Animation Block
 	register_block_type( plugin_dir_path( __FILE__ ) . 'build/animation-block/' );
 
 }
 add_action( 'init', 'dcs_scroll_animations_block_init' );
+
+
+//Enqueue front-end scripts
+
+function dcs_smooth_scroll(){
+	wp_enqueue_script('dcs_smooth_scroll', plugin_dir_url(__FILE__).'js/frontend.js', array(), DCS_SCROLL_ANIMATIONS_VERSION, true );
+}
+
+add_action('init', 'dcs_smooth_scroll');
