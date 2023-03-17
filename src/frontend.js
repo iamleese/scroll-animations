@@ -1,6 +1,5 @@
 import LocomotiveScroll from "locomotive-scroll";
 
-
 document.addEventListener("DOMContentLoaded", () => {
 
     const scroll = new LocomotiveScroll({

@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "scroll-animations/animation-filters",
+	"version": "0.1.0",
+	"title": "Scroll Section Filter",
+	"category": "",
+	"description": "Filter for group",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "scroll-animations",
+	"editorScript": "file:./index.js"
+}

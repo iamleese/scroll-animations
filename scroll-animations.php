@@ -32,6 +32,8 @@ add_action('init', 'locomotive_styles');
 function dcs_scroll_animations_block_init() {
 	//Animation Block
 	register_block_type( plugin_dir_path( __FILE__ ) . 'build/animation-block/' );
+	register_block_type( plugin_dir_path( __FILE__ ) . 'build/animation-filters/' );
+
 
 }
 add_action( 'init', 'dcs_scroll_animations_block_init' );
