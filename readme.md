@@ -24,15 +24,19 @@ This plugin uses Locomotive scroll to create beautiful scroll-based animations. 
 Scroll sections are optional but is recommended to improve performance — especially with longer pages.
 
 **Create a group block:**
+Add a group block to your editor:
+
 ![Group Block Icon](/assets/images/group-block.png)
 
 **Activate Scroll Section**
 Go to the block settings and under the Scroll Settings Tab check "make scroll section."
+
 ![Scroll Section Toggle](/assets/images/scroll-section-tab.png)
 
 ### Add an Animated Block
 You can find the Animated Block under the "Design" category in your block menu. Add the block and drop whatever you need animated inside of the block.
 Settings can be adjusted in the block menu.
+
 ![Animated Block](/assets/images/animated-block.png)
 
 
