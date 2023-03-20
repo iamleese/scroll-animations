@@ -180,19 +180,11 @@ const filterBlocks = settings => {
       isScrollSection: {
         type: 'boolean'
       }
-    } // This copies the old settings.  Now we can edit them!
+    }
   };
-
-  return newSettings; // Make sure to return our new settings!
+  return newSettings;
 };
-
-(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_5__.addFilter)('blocks.registerBlockType',
-// hook name, very important!
-_block_json__WEBPACK_IMPORTED_MODULE_6__.name,
-// your name, very arbitrary!
-filterBlocks // function to run
-);
-
+(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_5__.addFilter)('blocks.registerBlockType', _block_json__WEBPACK_IMPORTED_MODULE_6__.name, filterBlocks);
 const withScrollSection = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__.createHigherOrderComponent)(BlockEdit => {
   return props => {
     // Do nothing if it's another block than our defined ones.

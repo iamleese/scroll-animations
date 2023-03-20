@@ -24,6 +24,8 @@ add_action('enqueue_block_editor_assets', 'dcs_scroll_animations');
 
 function locomotive_styles(){
 	wp_enqueue_style('locomotive', plugin_dir_url(__FILE__).'css/locomotive.css', DCS_SCROLL_ANIMATIONS_VERSION );
+	wp_enqueue_style('animations', plugin_dir_url(__FILE__).'css/animations.css', DCS_SCROLL_ANIMATIONS_VERSION );
+
 }
 
 add_action('init', 'locomotive_styles');
@@ -42,7 +44,7 @@ add_action( 'init', 'dcs_scroll_animations_block_init' );
 //Enqueue front-end scripts
 
 function dcs_smooth_scroll(){
-	wp_enqueue_script('dcs_smooth_scroll', plugin_dir_url(__FILE__).'js/frontend.js', array(), DCS_SCROLL_ANIMATIONS_VERSION, true );
+	wp_enqueue_script('dcs_smooth_scroll', plugin_dir_url(__FILE__).'build/index.js', array(), DCS_SCROLL_ANIMATIONS_VERSION, true );
 }
 
 add_action('init', 'dcs_smooth_scroll');

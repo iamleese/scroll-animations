@@ -19,16 +19,16 @@ const filterBlocks = (settings) => {
     }
 
     const newSettings = {
-          ...settings, attributes : {...settings.attributes, isScrollSection: { type: 'boolean' } } , // This copies the old settings.  Now we can edit them!
+          ...settings, attributes : {...settings.attributes, isScrollSection: { type: 'boolean' } } ,
     }
 
-    return newSettings; // Make sure to return our new settings!
+    return newSettings; 
 }
 
 addFilter(
-    'blocks.registerBlockType', // hook name, very important!
-    metadata.name, // your name, very arbitrary!
-    filterBlocks // function to run
+    'blocks.registerBlockType', 
+    metadata.name, 
+    filterBlocks 
 )
 
 
