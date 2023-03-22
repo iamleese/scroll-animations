@@ -1,6 +1,6 @@
 {
 	"name": "scroll-animations",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Smooth scrolling animation with the help of locomotive.js",
 	"author": "Melissa Hiatt",
 	"license": "GPL-2.0-or-later",

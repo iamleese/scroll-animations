@@ -2,7 +2,7 @@
 Contributors:      Melissa Hiatt  
 Tags:              block  
 Tested up to:      6.1.1  
-Stable tag:        0.1.0  
+Stable tag:        1.0.0
 License:           GPL-2.0-or-later  
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -41,6 +41,8 @@ Settings can be adjusted in the block menu.
 
 
 ## Changelog
+### 1.0.0
+* Stable Version (3/22/2023)
 
 ### 0.1.0
 * Release
