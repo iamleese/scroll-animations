@@ -41,8 +41,9 @@ Settings can be adjusted in the block menu.
 
 
 ## Changelog
+
 ### 1.0.0
-* Stable Version (3/22/2023)
+* Stable Version (3/28/2023)
 
 ### 0.1.0
 * Release

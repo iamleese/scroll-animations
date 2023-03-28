@@ -7,7 +7,8 @@
   "category": "design",
   "description": "Creates an scroll-based animated block",
   "supports": {
-    "html": true
+    "html": true,
+    "anchor": true
   },
   "attributes": {
     "sticky": {
