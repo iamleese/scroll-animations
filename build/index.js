@@ -3312,10 +3312,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var locomotive_scroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 
 
+const scrollContainer = scrollSettings.container;
+
 document.addEventListener("DOMContentLoaded", () => {
    
      const scroll = new locomotive_scroll__WEBPACK_IMPORTED_MODULE_0__["default"]({
-        el: document.querySelector('.wp-site-blocks'),
+        el: document.querySelector(scrollContainer),
         smooth: true,
         reloadOnContextChange: true,
         smartphone: { 

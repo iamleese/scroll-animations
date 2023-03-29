@@ -40,9 +40,19 @@ require_once 'includes/settings.php';
 
 //Enqueue front-end scripts
 
-function dcs_smooth_scroll(){
+function dcs_smooth_scroll_scripts(){
+
+	
 	wp_enqueue_script('dcs_smooth_scroll', plugin_dir_url(__FILE__).'build/index.js', array(), DCS_SCROLL_ANIMATIONS_VERSION, true );
+
+	$option = get_option('dcs_scroll_animations_container');
+	$container = $option ? $option : '.wp-site-blocks'; //set default
+
+	$scrollSettings = ['container' => $container];
+
+	wp_localize_script( 'dcs_smooth_scroll', 'scrollSettings', $scrollSettings );
+
 }
 
-add_action('wp_enqueue_scripts', 'dcs_smooth_scroll');
+add_action('wp_enqueue_scripts', 'dcs_smooth_scroll_scripts');
 

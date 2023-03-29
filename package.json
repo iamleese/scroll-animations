@@ -18,7 +18,8 @@
 		"@wordpress/scripts": "^26.0.0"
 	},
 	"dependencies": {
-		"locomotive-scroll": "^4.1.4",
-		"concurrently": "^7.6.0"
+		"@wordpress/api-fetch": "^6.27.0",
+		"concurrently": "^7.6.0",
+		"locomotive-scroll": "^4.1.4"
 	}
 }
