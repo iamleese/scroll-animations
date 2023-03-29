@@ -43,10 +43,14 @@ Settings can be adjusted in the block menu.
 ## Changelog
 
 ### 1.0.0
-* Stable Version (3/28/2023)
+* Stable Version (3/29/2023)
 
 ### 0.1.0
 * Release
+
+## To Do
+* Create advanced settings for Locomotive instance options
+* Create a filter for a scrollTo() target on links and buttons.
 
 ## Credits
 Thank you to the developers at Locomotive for creating the scripts to make our websites awesome:
