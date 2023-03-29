@@ -3313,8 +3313,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 document.addEventListener("DOMContentLoaded", () => {
-
-    const scroll = new locomotive_scroll__WEBPACK_IMPORTED_MODULE_0__["default"]({
+   
+     const scroll = new locomotive_scroll__WEBPACK_IMPORTED_MODULE_0__["default"]({
         el: document.querySelector('.wp-site-blocks'),
         smooth: true,
         reloadOnContextChange: true,

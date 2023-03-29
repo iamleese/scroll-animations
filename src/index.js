@@ -1,8 +1,8 @@
 import LocomotiveScroll from "locomotive-scroll";
 
 document.addEventListener("DOMContentLoaded", () => {
-
-    const scroll = new LocomotiveScroll({
+   
+     const scroll = new LocomotiveScroll({
         el: document.querySelector('.wp-site-blocks'),
         smooth: true,
         reloadOnContextChange: true,

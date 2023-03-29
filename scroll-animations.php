@@ -13,6 +13,7 @@
  */
 
  define( 'DCS_SCROLL_ANIMATIONS_VERSION', '0.1.0' );
+ define( 'PLUGIN_NAME', 'dcs-scroll-animations');
 
 
 function locomotive_styles(){
@@ -33,6 +34,9 @@ function dcs_scroll_animations_block_init() {
 }
 add_action( 'init', 'dcs_scroll_animations_block_init' );
 
+//Add Settings
+require_once 'includes/settings.php';
+
 
 //Enqueue front-end scripts
 
@@ -41,3 +45,4 @@ function dcs_smooth_scroll(){
 }
 
 add_action('wp_enqueue_scripts', 'dcs_smooth_scroll');
+
