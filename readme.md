@@ -2,7 +2,7 @@
 Contributors:      Melissa Hiatt  
 Tags:              block  
 Tested up to:      6.1.1  
-Stable tag:        1.0.0
+Stable tag:        1.0.1
 License:           GPL-2.0-or-later  
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -39,8 +39,46 @@ Settings can be adjusted in the block menu.
 
 ![Animated Block](/assets/images/animated-block.png)
 
+## Advanced Usage
+
+### Call Functions
+Call functions can be found under the "Interactivity" panel. This will require some advanced knowledge of WordPress enqueuing and javascript.
+
+**Create your javascript file:**
+
+
+    //your_theme_file.js
+
+    sayHello(){
+        console.log("Hello!");
+    }
+
+
+**Enter the function name under the "Scroll Call" input:**
+
+![Scroll Call](/assets/images/scroll-call.png)
+
+
+**Events and objects**
+
+The event and object parameters are passed in each call. You can track the triggered event and the object 
+information when it appears in view.
+
+    //your_theme_file.js
+
+    sayHello(event,obj){
+        console.log("Hello!");
+        console.log(event);
+        console.log(obj);
+    }
+
+
+
 
 ## Changelog
+
+### 1.0.1
+* Added intuitive "call" function with updated instructions.
 
 ### 1.0.0
 * Stable Version (3/29/2023)
