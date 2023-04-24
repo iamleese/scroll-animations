@@ -4,7 +4,7 @@
  * Description:       Uses Locomotive Scroll attributes to blocks to create smooth scrolling and parallax effects.
  * Requires at least: 5.9
  * Requires PHP:      7.0
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Melissa Hiatt
  * Author URI:        https://designcodespace.com
  * License:           GPL-2.0-or-later
@@ -12,7 +12,7 @@
  * Text Domain:       scroll-animations
  */
 
- define( 'DCS_SCROLL_ANIMATIONS_VERSION', '0.1.0' );
+ define( 'DCS_SCROLL_ANIMATIONS_VERSION', '1.0.1' );
  define( 'PLUGIN_NAME', 'dcs-scroll-animations');
 
 

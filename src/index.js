@@ -21,5 +21,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+
+    scroll.on('call', (func,event,obj) => {
+        window[func](event,obj);
+    }); 
+
+    
+
 });
 
