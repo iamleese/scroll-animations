@@ -26,16 +26,19 @@ Scroll sections are optional but is recommended to improve performance — espec
 **Create a group block:**
 Add a group block to your editor:
 
+
 ![Group Block Icon](/assets/images/group-block.png)
 
 **Activate Scroll Section**
 Go to the block settings and under the Scroll Settings Tab check "make scroll section."
+
 
 ![Scroll Section Toggle](/assets/images/scroll-section-tab.png)
 
 ### Add an Animated Block
 You can find the Animated Block under the "Design" category in your block menu. Add the block and drop whatever you need animated inside of the block.
 Settings can be adjusted in the block menu.
+
 
 ![Animated Block](/assets/images/animated-block.png)
 
@@ -56,13 +59,14 @@ Call functions can be found under the "Interactivity" panel. This will require s
 
 **Enter the function name under the "Scroll Call" input:**
 
+
 ![Scroll Call](/assets/images/scroll-call.png)
 
 
 **Events and objects**
 
 The event and object parameters are passed in each call. You can track the triggered event and the object 
-information when it appears in view.
+information when the animation block comes in view.
 
     //your_theme_file.js
 
@@ -77,11 +81,11 @@ information when it appears in view.
 
 ## Changelog
 
-### 1.0.1
+### 1.0.1 (4/24/2023)
 * Added intuitive "call" function with updated instructions.
 
-### 1.0.0
-* Stable Version (3/29/2023)
+### 1.0.0 (3/29/2023)
+* Stable Version 
 
 ### 0.1.0
 * Release
