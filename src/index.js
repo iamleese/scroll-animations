@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     scroll.on('call', (func,event,obj) => {
         
-        if(func != NULL || func != '' ){
+        if(func != null|| func != '' ){
             window[func](event,obj);
         }
         
