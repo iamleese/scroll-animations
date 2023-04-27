@@ -3336,7 +3336,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     scroll.on('call', (func,event,obj) => {
         
-        if(func !== null || func != '' ){
+        if( func.length > 0 ){
             window[func](event,obj);
         }
         
