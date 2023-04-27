@@ -23,10 +23,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     scroll.on('call', (func,event,obj) => {
-        window[func](event,obj);
-    }); 
+        
+        if( func ){
+            window[func](event,obj);
+        }
+        
+    });
 
-    
+    window.addEventListener('DOMContentLoaded', scroll.update());
+
 
 });
 
