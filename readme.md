@@ -80,6 +80,8 @@ information when the animation block comes in view.
 
 
 ## Changelog
+### 1.0.2 (6/2/2023)
+* Added "Drop Zone" for blocks.
 
 ### 1.0.1 (4/24/2023)
 * Added intuitive "call" function with updated instructions.

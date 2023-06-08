@@ -3,7 +3,7 @@
 */
 import { __ } from '@wordpress/i18n';
 import { useBlockProps, InnerBlocks, InspectorControls } from '@wordpress/block-editor';
-import { Panel, PanelBody, PanelRow, SelectControl, ToggleControl, RangeControl, TextControl } from '@wordpress/components';
+import { Panel, PanelBody, PanelRow, SelectControl, ToggleControl, RangeControl, TextControl, DropZone } from '@wordpress/components';
 import { useState } from '@wordpress/element';
 
 import icons from './icons.js'
@@ -46,12 +46,27 @@ export default function Edit( { attributes, setAttributes } ) {
            }
         }
        
+        const BlockInserter = () => {
+          const [ hasDropped, setHasDropped ] = useState( false );
+      
+          return (
+              <div>
+                  { hasDropped ? 'Dropped!' : 'Drop something here' }
+                  <DropZone
+                      onFilesDrop={ () => setHasDropped( true ) }
+                      onHTMLDrop={ () => setHasDropped( true ) }
+                      onDrop={ () => setHasDropped( true ) }
+                  />
+              </div>
+          );
+      }
         
 
        
 
         return (
           <div { ...blockProps } >
+            <BlockInserter />
           
           <InspectorControls key="setting">
             <Panel>
