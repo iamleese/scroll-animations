@@ -80,6 +80,9 @@ information when the animation block comes in view.
 
 
 ## Changelog
+### 1.0.3 (7/27/2023)
+* Bug Fix: Removed min-width from range control in animation block.
+
 ### 1.0.2 (6/2/2023)
 * Added "Drop Zone" for blocks.
 
