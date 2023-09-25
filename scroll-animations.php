@@ -18,7 +18,7 @@
 
 function locomotive_styles(){
 	wp_enqueue_style('locomotive', plugin_dir_url(__FILE__).'css/locomotive.css', DCS_SCROLL_ANIMATIONS_VERSION );
-	wp_enqueue_style('animations', plugin_dir_url(__FILE__).'css/animations.css', DCS_SCROLL_ANIMATIONS_VERSION );
+	//wp_enqueue_style('animations', plugin_dir_url(__FILE__).'css/animations.css', DCS_SCROLL_ANIMATIONS_VERSION );
 
 }
 
@@ -54,5 +54,5 @@ function dcs_smooth_scroll_scripts(){
 
 }
 
-add_action('wp_enqueue_scripts', 'dcs_smooth_scroll_scripts');
+add_action('wp_enqueue_scripts', 'dcs_smooth_scroll_scripts', 30);
 
