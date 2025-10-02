@@ -46,9 +46,17 @@ function dcs_smooth_scroll_scripts(){
 	wp_enqueue_script('dcs_smooth_scroll', plugin_dir_url(__FILE__).'build/index.js', array(), DCS_SCROLL_ANIMATIONS_VERSION, true );
 
 	$option = get_option('dcs_scroll_animations_container');
-	$container = $option ? $option : '.wp-site-blocks'; //set default
+	$mobile = get_option('dcs_scroll_animations_mobile');
+	$tablet = get_option('dcs_scroll_animations_tablet');
 
-	$scrollSettings = ['container' => $container];
+	$container = $option ? $option : '.wp-site-blocks'; //set default
+	$showMobile = $mobile ? $mobile : 'false';
+	$showTablet = $tablet ? $tablet : 'false';
+
+	$scrollSettings = ['container' => $container,
+						'showMobile' => $showMobile,
+						'showTablet' => $showTablet
+						];
 
 	wp_localize_script( 'dcs_smooth_scroll', 'scrollSettings', $scrollSettings );
 
