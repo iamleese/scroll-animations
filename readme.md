@@ -6,10 +6,10 @@ Stable tag:        1.0.2
 License:           GPL-2.0-or-later  
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html  
 
-Adds Locomotive.js scroll animation attributes to Gutenberg blocks
+This replaces Locomotive.js with Lenis for scroll animation attributes to Gutenberg blocks
 
 ## Description
-This plugin uses Locomotive scroll to create beautiful scroll-based animations. It will add Locomotive Scroll attributes to blocks that you would like to animate. For more details on Locomotive Scroll visit their github page at: https://github.com/locomotivemtl/locomotive-scroll
+This plugin uses Lenis scroll to create beautiful scroll-based animations. It will add Locomotive Scroll attributes to blocks that you would like to animate. For more details on Lenis visit their github page at: [https://github.com/locomotivemtl/locomotive-scroll](https://github.com/darkroomengineering/lenis)
 
 
 ## Installation
